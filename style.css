@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
+/* header section style */
+.header {
+    display: flex;
+    flex-basis: 100%;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.header .menu {
+    display: none;
+}
+
+.header .logo {
+    height: 35px;
+    width: auto;
+}
+
+.logo img {
+    height: 100%;
+}
+
+
+.header .nav a {
+    padding: 10px 0;
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .login a {
+    margin-left: 10px;
+    color: #000;
+}
+
+.header .login .login-btn {
+    background: #f1f1f1;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .login .start-btn {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.header .login .globe {
+    width: 36px;
+    height: 36px;
+}
+
+.header .login .globe .globe-img {
+    height: 90%;
+    width: auto;
+    margin-top: 2px;
+}
+
+/* hero section style */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/image/Rectangle\ 1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 12% 0 7%;
+    gap: 50px;
+}
+
+.hero-section .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 8% 3%;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form h1 {
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+.row1 {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.row1 select {
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    background-color: #ececec;
+    flex-basis: 24%;
+    border-radius: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(assets/image/);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .row2 .input {
+    padding: 14px 24px;
+    background-color: #ececec;
+    flex-basis: 74%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero-section .row2 button {
+    padding: 14px 24px;
+    background-color: #00EBC7;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    flex-basis: 24%;
+    transition: all 0.3s ease;
+}
+
+.hero-section .hero-btn {
+    border: 1px solid #fff;
+    padding: 14px 20px;
+    border-radius: 30px;
+    background: transparent;
+    margin-top: 30px;
+}
+
+.hero-section .hero-btn a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* favorite section style */
+.favorite {
+    width: 100%;
+    padding: 9% 0;
+    background-color: #FDE24F;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 1px solid #000;
+
+    & h3 {
+        font-size: 34px;
+        font-weight: 500;
+
+        & span {
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/* feature section style */
+.feature {
+    width: 100%;
+    padding: 9% 0;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    transition: all 0.3s ease;
+
+    & .feature-h3 {
+        font-size: 32px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 70px;
+        transition: all 0.3s ease;
+
+        & .col1 {
+            padding: 30px 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            & h3 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #535353;
+                padding: 0 20px;
+            }
+
+            .link {
+                text-align: center;
+                margin-top: 30px;
+
+                & a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #161616;
+                }
+            }
+        }
+
+        .col-hr {
+            width: 120px;
+        }
+    }
+
+    .feature-btn {
+        padding: 8px 18px;
+        border: 1.5px solid #000;
+        border-radius: 30px;
+        color: #000;
+    }
+}
+
+/* trade section style */
+.trade-section {
+    width: 100%;   
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.trade-section p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.trade-section .buy-btn,
+.trade-section .sell-btn {
+    text-align: center;
+}
+
+.trade-section .buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    border-right: 1px solid #000;
+    padding: 5% 5%;
+}
+
+.trade-section .buy h3 {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.trade-section .buy-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade-section .buy-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px 40px 10px 0px;
+}
+
+.trade-section .sell {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-left: 40px;
+    padding: 5% 5%;
+
+}
+
+.trade-section .sell h3 {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.trade-section .sell-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade-section .sell-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.trade-section button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* details section style */
+.details-section {
+    width: 100%;
+    background-color: #CFBAFF;
+    border-top: 1px solid #000;
+}
+
+.details-section .details-text {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.details-text h1 {
+    font-size: 60px;
+    padding: 5% 12%;
+    transition: all 0.3s ease;
+}
+
+.details-text button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 33px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* footer section style */
+.footer {
+    width: 100%;
+    padding-top: 5%;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer .footer-links {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.footer-links a.italic {
+    font-style: italic;
+}
+
+.footer .footer-text {
+    border-top: 1px solid #fff;
+    padding: 2%;
+}
+
+.footer-text p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* website responsive design */
+@media (max-device-width: 1290px) {
+    .trade-section img {
+        width: 3vw;
+    }
+
+    .trade-section p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media (max-device-width: 1012px) {
+    .row1 select {
+        flex-basis: 49%;
+    }
+}
+
+@media (max-device-width: 818px) {
+    .hero-section .row2 button {
+        padding: 14px 18px;
+    }
+
+    .details-text h1 {
+        font-size: 50px;
+        padding: 5% 12%;
+    }
+
+}
+
+@media (max-device-width: 768px) {
+    .header .nav {
+        display: none;
+    }
+
+    .header .menu {
+        display: inline-block;
+        padding: 7px 10px;
+        border-radius: 50%;
+        background-color: #ececec;
+        cursor: pointer;
+    }
+
+    .hero-section .row2 input {
+        flex-basis: 69%;
+    }
+
+    .hero-section .row2 button {
+        flex-basis: 30%;
+    }
+
+    .feature {
+        padding: 10% 0;
+    }
+
+    .feature .container2 {
+        padding: 20px 30px;
+    }
+
+    .trade-section {
+        flex-direction: column;
+    }
+
+    .trade-section .buy {
+        border: none;
+    }
+
+    .trade-section .buy-details div {
+        margin-right: 0;
+    }
+
+    .trade-section .buy h3 {
+        text-align: center;
+    }
+
+    .trade-section .sell {
+        margin-left: 0;
+    }
+
+    .trade-section .sell h3 {
+        text-align: center;
+    }
+}
+
+@media (max-device-width: 674px) {
+    .row1 select {
+        flex-basis: 100%;
+    }
+
+    .hero-section .row2 {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .hero-section .row2 #text {
+        width: 100%;
+    }
+
+    .feature .feature-h3{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .feature .container2 {
+        flex-direction: column;
+        padding: 0 20%;
+    }
+
+    .feature .container2 .col-hr {
+        display: none;
+    }
+
+    .details-text h1 {
+        padding: 5%;
+    }
+
+    .footer-links h4 {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+
+    .footer-text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-device-width: 532px) {
+    .header .login {
+        display: none;
+    }
+}
+
+@media (max-device-width: 480px) {
+    .details-text h1 {
+        font-size: 36px;
+        padding: 3% 5%;
+    }
+
+    .footer .footer-links {
+        padding: 1;
+        flex-wrap: wrap;
+    }
+
+    .footer-links div {
+        flex-basis: 49%;
+        padding-top: 20px;
+    }
+}
